@@ -46,7 +46,7 @@ label start:
     scene bg trinity1
     menu:
         "Who are you?"
-        "Refrigator":
+        "Refrigerator":
             call agree
             #block of code to run
         "Toaster":
