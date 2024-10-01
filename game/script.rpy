@@ -37,19 +37,19 @@ label start:
 
     # These display lines of dialogue.
 
-    mari "Ai shiteru."
+    mari "Yeah, Broo."
 
     show mari sad at left
 
-    mari "Onii chan"
+    mari "Hello World!"
     
     scene bg trinity1
     menu:
-        "Watashi,.... Kiraiii?"
-        "iya zen zen":
+        "Who are you?"
+        "Refrigator":
             call agree
             #block of code to run
-        "Mochiron":
+        "Toaster":
             call discard
             #block of code to run
         
@@ -59,9 +59,9 @@ label start:
     return
 label agree:
     show mari glad at center
-    mari "Suki"
+    mari "Yeah, uhuy"
     return
 label discard:
     show mari sad at center
-    mari "Uso"
+    mari "Nah, good job"
     return
