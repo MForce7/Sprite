@@ -1,0 +1,25 @@
+init python: 
+    bubble.db_filename = bubble.json
+    bubble.properties["bottom_right"]["window_background"] = Frame("bubble-pink-bottom-right.png", 55, 55, 55, 95) 
+    bubble.properties["bottom_left"]["window_background"] = Frame("bubble-blue-bottom-left.png", 55, 55, 55, 95) 
+
+define eileen = Character("Eileen", image = "eileen", kind bubble, who_color = "#ffaea8", who_ypos = 0.4) 
+define mila = Character("Mila", image "mila", kind bubble, who_color = "#b3daff", who_ypos 0.4)  
+
+define bubble.rows 50 
+define bubble.cols = 50 
+define bubble.default_area (5, 5, 10, 8) 
+
+transform place_right: 
+    pos (0.2, 1.0) 
+    anchor (0.5, 1.0) 
+
+transform place_left: 
+    pos (0.8, 1.0) 
+    anchor (0.5, 1.0) 
+
+label introduction: 
+    scene background 
+    show eileen at place_left 
+    show mila at place_right
+    eileen "Hello! I'm Eileen!"
